@@ -3,6 +3,6 @@ const body = document.querySelector('body');
 
 boxes.forEach(function(ele) {
     ele.addEventListener('click', function(e) {
-        body.style.backgroundColor = e.target.id;
+        body.style.backgroundColor =  window.getComputedStyle(e.target).backgroundColor;
     })
 })
